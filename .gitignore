@@ -1,0 +1,7 @@
+/.project
+compiled/
+*.bak
+*.dproj.local
+*.dcu
+*.identcache
+__history/
