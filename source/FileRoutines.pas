@@ -10,7 +10,7 @@ uses
   
 function Path(const s: array of string): string; overload;
 
-function Write(const aStream: TStream; const s: String): boolean; overload;
+function Write(const aStream: TStream; const s: String): boolean; overload; inline;
 
 implementation
 
