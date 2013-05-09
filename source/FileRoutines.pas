@@ -30,8 +30,12 @@ begin
 end;
 
 function Write(const aStream: TStream; const s: String): boolean;
+var
+  dataSize, writeResult: Integer;
 begin
-  aStream.Write(PChar(s)^, GetByteLength(s));
+  dataSize := GetByteLength(s) - 1;
+  writeResult := aStream.Write(PChar(s)^, dataSize);
+  result := writeResult = dataSize;
 end;
 
 end.
